@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SANXUATModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblDHCT">
+    <Key>
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Tenquicach" />
+    </Key>
+    <Property Name="Code" Type="Int32" Nullable="false" />
+    <Property Name="Tenquicach" Type="String" MaxLength="400" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="madh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Khachhang" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MaSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dvt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Mau_banve" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tonkho" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Soluong" Type="Int32" />
+    <Property Name="dongia" Type="Int32" />
+    <Property Name="thanhtien" Type="Int32" />
+    <Property Name="ngaygiao" Type="DateTime" Precision="0" />
+    <Property Name="ghichu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ngoaiquang" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblDONHANG">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ngaydh" Type="DateTime" Precision="0" />
+    <Property Name="madh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoaiDH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nvkd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaPO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Khachhang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Diachi" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PhanloaiKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayBD" Type="DateTime" Precision="0" />
+    <Property Name="NgayKT" Type="DateTime" Precision="0" />
+    <Property Name="Giatri" Type="Int32" />
+    <Property Name="NgayGH" Type="DateTime" Precision="0" />
+    <Property Name="HanTT" Type="DateTime" Precision="0" />
+    <Property Name="Diengiai" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DONDATHANG">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ngaydh" Type="DateTime" Precision="0" />
+    <Property Name="MAĐH" Type="String" MaxLength="65" FixedLength="false" Unicode="true" />
+    <Property Name="madh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoaiDH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nvkd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaPo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Khachhang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Diachi" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PhanloaiKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayBD" Type="DateTime" Precision="0" />
+    <Property Name="NgayKT" Type="DateTime" Precision="0" />
+    <Property Name="Giatri" Type="Int32" />
+    <Property Name="NgayGH" Type="DateTime" Precision="0" />
+    <Property Name="HanTT" Type="DateTime" Precision="0" />
+    <Property Name="Diengiai" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="SANXUATEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblDHCTs" EntityType="Self.tblDHCT" />
+    <EntitySet Name="tblDONHANGs" EntityType="Self.tblDONHANG" />
+    <EntitySet Name="DONDATHANGs" EntityType="Self.DONDATHANG" />
+  </EntityContainer>
+</Schema>

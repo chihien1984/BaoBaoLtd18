@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SANXUATModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SANXUAT.dbo.tblNHAP_VATLIEUPHU' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblNHAP_VATLIEUPHU">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Manhap" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ngaynhap" Type="date" />
+    <Property Name="Mavlphu" Type="nvarchar" MaxLength="50" />
+    <Property Name="Donvi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soluong" Type="float" />
+    <Property Name="Dongia" Type="float" />
+    <Property Name="Thanhtien" Type="float" />
+    <Property Name="Nguoilap" Type="nvarchar" MaxLength="150" />
+    <Property Name="Nguoigiao" Type="nvarchar" MaxLength="50" />
+    <Property Name="Diengiai" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nguoinhan" Type="nvarchar" MaxLength="250" />
+    <Property Name="Noinhan" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ngayghi" Type="datetime" />
+    <Property Name="Nhaptam" Type="float" />
+    <Property Name="XuatTT" Type="float" />
+    <Property Name="LoaiNV" Type="nvarchar" MaxLength="50" />
+    <Property Name="BpSuDung" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="SANXUATModelStoreContainer">
+    <EntitySet Name="tblNHAP_VATLIEUPHU" EntityType="Self.tblNHAP_VATLIEUPHU" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblNHAP_VATLIEUPHU].[id] AS [id], 
+    [tblNHAP_VATLIEUPHU].[Manhap] AS [Manhap], 
+    [tblNHAP_VATLIEUPHU].[Ngaynhap] AS [Ngaynhap], 
+    [tblNHAP_VATLIEUPHU].[Mavlphu] AS [Mavlphu], 
+    [tblNHAP_VATLIEUPHU].[Donvi] AS [Donvi], 
+    [tblNHAP_VATLIEUPHU].[Soluong] AS [Soluong], 
+    [tblNHAP_VATLIEUPHU].[Dongia] AS [Dongia], 
+    [tblNHAP_VATLIEUPHU].[Thanhtien] AS [Thanhtien], 
+    [tblNHAP_VATLIEUPHU].[Nguoilap] AS [Nguoilap], 
+    [tblNHAP_VATLIEUPHU].[Nguoigiao] AS [Nguoigiao], 
+    [tblNHAP_VATLIEUPHU].[Diengiai] AS [Diengiai], 
+    [tblNHAP_VATLIEUPHU].[Nguoinhan] AS [Nguoinhan], 
+    [tblNHAP_VATLIEUPHU].[Noinhan] AS [Noinhan], 
+    [tblNHAP_VATLIEUPHU].[Ngayghi] AS [Ngayghi], 
+    [tblNHAP_VATLIEUPHU].[Nhaptam] AS [Nhaptam], 
+    [tblNHAP_VATLIEUPHU].[XuatTT] AS [XuatTT], 
+    [tblNHAP_VATLIEUPHU].[LoaiNV] AS [LoaiNV], 
+    [tblNHAP_VATLIEUPHU].[BpSuDung] AS [BpSuDung]
+    FROM [dbo].[tblNHAP_VATLIEUPHU] AS [tblNHAP_VATLIEUPHU]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

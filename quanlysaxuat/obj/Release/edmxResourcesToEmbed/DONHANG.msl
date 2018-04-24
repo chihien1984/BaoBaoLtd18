@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SANXUATModelStoreContainer" CdmEntityContainer="SANXUATEntities2">
+    <EntitySetMapping Name="DONDATHANGs">
+      <EntityTypeMapping TypeName="SANXUATModel.DONDATHANG">
+        <MappingFragment StoreEntitySet="DONDATHANG">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Ngaydh" ColumnName="Ngaydh" />
+          <ScalarProperty Name="MAĐH" ColumnName="MAĐH" />
+          <ScalarProperty Name="madh" ColumnName="madh" />
+          <ScalarProperty Name="LoaiDH" ColumnName="LoaiDH" />
+          <ScalarProperty Name="nvkd" ColumnName="nvkd" />
+          <ScalarProperty Name="MaPo" ColumnName="MaPo" />
+          <ScalarProperty Name="Khachhang" ColumnName="Khachhang" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="PhanloaiKH" ColumnName="PhanloaiKH" />
+          <ScalarProperty Name="NgayBD" ColumnName="NgayBD" />
+          <ScalarProperty Name="NgayKT" ColumnName="NgayKT" />
+          <ScalarProperty Name="Giatri" ColumnName="Giatri" />
+          <ScalarProperty Name="NgayGH" ColumnName="NgayGH" />
+          <ScalarProperty Name="HanTT" ColumnName="HanTT" />
+          <ScalarProperty Name="Diengiai" ColumnName="Diengiai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SANXUATModelStoreContainer" CdmEntityContainer="SANXUATEntities1">
+    <EntitySetMapping Name="tblDHCTs">
+      <EntityTypeMapping TypeName="SANXUATModel.tblDHCT">
+        <MappingFragment StoreEntitySet="tblDHCT">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Tenquicach" ColumnName="Tenquicach" />
+          <ScalarProperty Name="madh" ColumnName="madh" />
+          <ScalarProperty Name="Khachhang" ColumnName="Khachhang" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+          <ScalarProperty Name="dvt" ColumnName="dvt" />
+          <ScalarProperty Name="Mau_banve" ColumnName="Mau_banve" />
+          <ScalarProperty Name="Tonkho" ColumnName="Tonkho" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="dongia" ColumnName="dongia" />
+          <ScalarProperty Name="thanhtien" ColumnName="thanhtien" />
+          <ScalarProperty Name="ngaygiao" ColumnName="ngaygiao" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+          <ScalarProperty Name="ngoaiquang" ColumnName="ngoaiquang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDONHANGs">
+      <EntityTypeMapping TypeName="SANXUATModel.tblDONHANG">
+        <MappingFragment StoreEntitySet="tblDONHANG">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Ngaydh" ColumnName="Ngaydh" />
+          <ScalarProperty Name="madh" ColumnName="madh" />
+          <ScalarProperty Name="LoaiDH" ColumnName="LoaiDH" />
+          <ScalarProperty Name="nvkd" ColumnName="nvkd" />
+          <ScalarProperty Name="MaPO" ColumnName="MaPO" />
+          <ScalarProperty Name="Khachhang" ColumnName="Khachhang" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="PhanloaiKH" ColumnName="PhanloaiKH" />
+          <ScalarProperty Name="NgayBD" ColumnName="NgayBD" />
+          <ScalarProperty Name="NgayKT" ColumnName="NgayKT" />
+          <ScalarProperty Name="Giatri" ColumnName="Giatri" />
+          <ScalarProperty Name="NgayGH" ColumnName="NgayGH" />
+          <ScalarProperty Name="HanTT" ColumnName="HanTT" />
+          <ScalarProperty Name="Diengiai" ColumnName="Diengiai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DONDATHANGs">
+      <EntityTypeMapping TypeName="SANXUATModel.DONDATHANG">
+        <MappingFragment StoreEntitySet="DONDATHANG">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Ngaydh" ColumnName="Ngaydh" />
+          <ScalarProperty Name="MAĐH" ColumnName="MAĐH" />
+          <ScalarProperty Name="madh" ColumnName="madh" />
+          <ScalarProperty Name="LoaiDH" ColumnName="LoaiDH" />
+          <ScalarProperty Name="nvkd" ColumnName="nvkd" />
+          <ScalarProperty Name="MaPo" ColumnName="MaPo" />
+          <ScalarProperty Name="Khachhang" ColumnName="Khachhang" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="PhanloaiKH" ColumnName="PhanloaiKH" />
+          <ScalarProperty Name="NgayBD" ColumnName="NgayBD" />
+          <ScalarProperty Name="NgayKT" ColumnName="NgayKT" />
+          <ScalarProperty Name="Giatri" ColumnName="Giatri" />
+          <ScalarProperty Name="NgayGH" ColumnName="NgayGH" />
+          <ScalarProperty Name="HanTT" ColumnName="HanTT" />
+          <ScalarProperty Name="Diengiai" ColumnName="Diengiai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SANXUATModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblDHCT">
+    <Key>
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Tenquicach" />
+    </Key>
+    <Property Name="Code" Type="int" Nullable="false" />
+    <Property Name="Tenquicach" Type="nvarchar" MaxLength="400" Nullable="false" />
+    <Property Name="madh" Type="nvarchar" MaxLength="50" />
+    <Property Name="Khachhang" Type="nvarchar" MaxLength="200" />
+    <Property Name="MaSP" Type="nvarchar" MaxLength="50" />
+    <Property Name="dvt" Type="nvarchar" MaxLength="20" />
+    <Property Name="Mau_banve" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tonkho" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Soluong" Type="int" />
+    <Property Name="dongia" Type="int" />
+    <Property Name="thanhtien" Type="int" />
+    <Property Name="ngaygiao" Type="date" />
+    <Property Name="ghichu" Type="nvarchar" MaxLength="500" />
+    <Property Name="ngoaiquang" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="tblDONHANG">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ngaydh" Type="date" />
+    <Property Name="madh" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoaiDH" Type="nvarchar" MaxLength="50" />
+    <Property Name="nvkd" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaPO" Type="nvarchar" MaxLength="50" />
+    <Property Name="Khachhang" Type="nvarchar" MaxLength="50" />
+    <Property Name="Diachi" Type="nvarchar" MaxLength="500" />
+    <Property Name="PhanloaiKH" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayBD" Type="date" />
+    <Property Name="NgayKT" Type="date" />
+    <Property Name="Giatri" Type="int" />
+    <Property Name="NgayGH" Type="date" />
+    <Property Name="HanTT" Type="date" />
+    <Property Name="Diengiai" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SANXUAT.dbo.DONDATHANG' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DONDATHANG">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ngaydh" Type="date" />
+    <Property Name="MAĐH" Type="nvarchar" MaxLength="65" />
+    <Property Name="madh" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoaiDH" Type="nvarchar" MaxLength="50" />
+    <Property Name="nvkd" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaPo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Khachhang" Type="nvarchar" MaxLength="50" />
+    <Property Name="Diachi" Type="nvarchar" MaxLength="500" />
+    <Property Name="PhanloaiKH" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayBD" Type="date" />
+    <Property Name="NgayKT" Type="date" />
+    <Property Name="Giatri" Type="int" />
+    <Property Name="NgayGH" Type="date" />
+    <Property Name="HanTT" Type="date" />
+    <Property Name="Diengiai" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityContainer Name="SANXUATModelStoreContainer">
+    <EntitySet Name="tblDHCT" EntityType="Self.tblDHCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDONHANG" EntityType="Self.tblDONHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DONDATHANG" EntityType="Self.DONDATHANG" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DONDATHANG].[Code] AS [Code], 
+    [DONDATHANG].[Ngaydh] AS [Ngaydh], 
+    [DONDATHANG].[MAĐH] AS [MAĐH], 
+    [DONDATHANG].[madh] AS [madh], 
+    [DONDATHANG].[LoaiDH] AS [LoaiDH], 
+    [DONDATHANG].[nvkd] AS [nvkd], 
+    [DONDATHANG].[MaPo] AS [MaPo], 
+    [DONDATHANG].[Khachhang] AS [Khachhang], 
+    [DONDATHANG].[Diachi] AS [Diachi], 
+    [DONDATHANG].[PhanloaiKH] AS [PhanloaiKH], 
+    [DONDATHANG].[NgayBD] AS [NgayBD], 
+    [DONDATHANG].[NgayKT] AS [NgayKT], 
+    [DONDATHANG].[Giatri] AS [Giatri], 
+    [DONDATHANG].[NgayGH] AS [NgayGH], 
+    [DONDATHANG].[HanTT] AS [HanTT], 
+    [DONDATHANG].[Diengiai] AS [Diengiai]
+    FROM [dbo].[DONDATHANG] AS [DONDATHANG]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

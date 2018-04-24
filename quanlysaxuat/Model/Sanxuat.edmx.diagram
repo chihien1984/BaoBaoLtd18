@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0c54bc5051974b25a820adb91feed17d" Name="Diagram1" ZoomLevel="75">
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblDM_VATTU" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblvattu_dauvao" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.Delivery_VatTu" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblDHCT" Width="1.5" PointX="5.375" PointY="4.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblDSNHANVIEN" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.Delivery_DatHang" Width="1.5" PointX="7.375" PointY="4.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.Delivery_NhanVien" Width="1.5" PointX="7.375" PointY="7.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblDM_VATLIEUPHU" Width="1.5" PointX="9.375" PointY="0.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblNHAP_VATLIEUPHU" Width="1.5" PointX="9.375" PointY="4.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.DeliveryMaterial" Width="1.5" PointX="7.375" PointY="10.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblDM_KHUON" Width="1.5" PointX="9.375" PointY="10.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblKhungThoiGianLamViec" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblResourcesDelivery" Width="1.625" PointX="11" PointY="5.125" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblDS_GIACONG" Width="1.5" PointX="11.375" PointY="10.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.DanhMucMay" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblResource" Width="1.5" PointX="13.375" PointY="3.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblUser" Width="1.5" PointX="13.375" PointY="10.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.AspNetUser" Width="1.5" PointX="9.375" PointY="14.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblFunction" Width="1.5" PointX="13.375" PointY="7.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblResourcesUser" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.tblUserFunction" Width="1.5" PointX="13.375" PointY="13.75" />
+        <EntityTypeShape EntityType="quanlysanxuat.Model.KhachHangPhanLoai" Width="1.5" PointX="0.75" PointY="15.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

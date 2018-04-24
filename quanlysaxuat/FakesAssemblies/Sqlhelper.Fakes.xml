@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sqlhelper.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper">
+            <summary>Shim type of Microsoft.ApplicationBlocks.Data.SqlHelper</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.#ctor(Microsoft.ApplicationBlocks.Data.SqlHelper)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.AssignParameterValuesSqlParameterArrayDataRow">
+            <summary>Sets the shim of SqlHelper.AssignParameterValues(SqlParameter[] commandParameters, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.AssignParameterValuesSqlParameterArrayObjectArray">
+            <summary>Sets the shim of SqlHelper.AssignParameterValues(SqlParameter[] commandParameters, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.AttachParametersSqlCommandSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.AttachParameters(SqlCommand command, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.Constructor">
+            <summary>Sets the shim of SqlHelper.SqlHelper()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.CreateCommandSqlConnectionStringStringArray">
+            <summary>Sets the shim of SqlHelper.CreateCommand(SqlConnection connection, String spName, String[] sourceColumns)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetSqlConnectionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetSqlConnectionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetSqlConnectionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteDataset(SqlConnection connection, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetSqlTransactionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteDataset(SqlTransaction transaction, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetSqlTransactionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteDataset(SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetSqlTransactionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteDataset(SqlTransaction transaction, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetStringCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetStringCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetStringStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteDataset(String connectionString, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetTypedParamsSqlConnectionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteDatasetTypedParams(SqlConnection connection, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetTypedParamsSqlTransactionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteDatasetTypedParams(SqlTransaction transaction, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteDatasetTypedParamsStringStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteDatasetTypedParams(String connectionString, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQuerySqlConnectionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQuerySqlConnectionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQuerySqlConnectionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQuery(SqlConnection connection, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQuerySqlTransactionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQuery(SqlTransaction transaction, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQuerySqlTransactionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQuery(SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQuerySqlTransactionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQuery(SqlTransaction transaction, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQueryStringCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQueryStringCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQueryStringStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQuery(String connectionString, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQueryTypedParamsSqlConnectionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQueryTypedParams(SqlConnection connection, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQueryTypedParamsSqlTransactionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQueryTypedParams(SqlTransaction transaction, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteNonQueryTypedParamsStringStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteNonQueryTypedParams(String connectionString, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderSqlConnectionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteReader(SqlConnection connection, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderSqlConnectionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteReader(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderSqlConnectionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteReader(SqlConnection connection, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderSqlTransactionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteReader(SqlTransaction transaction, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderSqlTransactionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteReader(SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderSqlTransactionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteReader(SqlTransaction transaction, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderStringCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderStringCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderStringStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteReader(String connectionString, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderTypedParamsSqlConnectionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteReaderTypedParams(SqlConnection connection, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderTypedParamsSqlTransactionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteReaderTypedParams(SqlTransaction transaction, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteReaderTypedParamsStringStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteReaderTypedParams(String connectionString, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarSqlConnectionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteScalar(SqlConnection connection, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarSqlConnectionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteScalar(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarSqlConnectionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteScalar(SqlConnection connection, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarSqlTransactionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteScalar(SqlTransaction transaction, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarSqlTransactionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteScalar(SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarSqlTransactionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteScalar(SqlTransaction transaction, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarStringCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteScalar(String connectionString, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarStringCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteScalar(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarStringStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteScalar(String connectionString, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarTypedParamsSqlConnectionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteScalarTypedParams(SqlConnection connection, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarTypedParamsSqlTransactionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteScalarTypedParams(SqlTransaction transaction, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteScalarTypedParamsStringStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteScalarTypedParams(String connectionString, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteXmlReaderSqlConnectionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteXmlReader(SqlConnection connection, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteXmlReaderSqlConnectionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteXmlReader(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteXmlReaderSqlConnectionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteXmlReader(SqlConnection connection, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteXmlReaderSqlTransactionCommandTypeString">
+            <summary>Sets the shim of SqlHelper.ExecuteXmlReader(SqlTransaction transaction, CommandType commandType, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteXmlReaderSqlTransactionCommandTypeStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelper.ExecuteXmlReader(SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteXmlReaderSqlTransactionStringObjectArray">
+            <summary>Sets the shim of SqlHelper.ExecuteXmlReader(SqlTransaction transaction, String spName, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteXmlReaderTypedParamsSqlConnectionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteXmlReaderTypedParams(SqlConnection connection, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.ExecuteXmlReaderTypedParamsSqlTransactionStringDataRow">
+            <summary>Sets the shim of SqlHelper.ExecuteXmlReaderTypedParams(SqlTransaction transaction, String spName, DataRow dataRow)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetSqlConnectionCommandTypeStringDataSetStringArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(SqlConnection connection, CommandType commandType, String commandText, DataSet dataSet, String[] tableNames)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetSqlConnectionCommandTypeStringDataSetStringArraySqlParameterArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(SqlConnection connection, CommandType commandType, String commandText, DataSet dataSet, String[] tableNames, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetSqlConnectionSqlTransactionCommandTypeStringDataSetStringArraySqlParameterArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(SqlConnection connection, SqlTransaction transaction, CommandType commandType, String commandText, DataSet dataSet, String[] tableNames, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetSqlConnectionStringDataSetStringArrayObjectArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(SqlConnection connection, String spName, DataSet dataSet, String[] tableNames, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetSqlTransactionCommandTypeStringDataSetStringArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(SqlTransaction transaction, CommandType commandType, String commandText, DataSet dataSet, String[] tableNames)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetSqlTransactionCommandTypeStringDataSetStringArraySqlParameterArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(SqlTransaction transaction, CommandType commandType, String commandText, DataSet dataSet, String[] tableNames, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetSqlTransactionStringDataSetStringArrayObjectArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(SqlTransaction transaction, String spName, DataSet dataSet, String[] tableNames, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetStringCommandTypeStringDataSetStringArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(String connectionString, CommandType commandType, String commandText, DataSet dataSet, String[] tableNames)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetStringCommandTypeStringDataSetStringArraySqlParameterArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(String connectionString, CommandType commandType, String commandText, DataSet dataSet, String[] tableNames, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.FillDatasetStringStringDataSetStringArrayObjectArray">
+            <summary>Sets the shim of SqlHelper.FillDataset(String connectionString, String spName, DataSet dataSet, String[] tableNames, Object[] parameterValues)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.PrepareCommandSqlCommandSqlConnectionSqlTransactionCommandTypeStringSqlParameterArrayBooleanOut">
+            <summary>Sets the shim of SqlHelper.PrepareCommand(SqlCommand command, SqlConnection connection, SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters, Boolean&amp; mustCloseConnection)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.UpdateDatasetSqlCommandSqlCommandSqlCommandDataSetString">
+            <summary>Sets the shim of SqlHelper.UpdateDataset(SqlCommand insertCommand, SqlCommand deleteCommand, SqlCommand updateCommand, DataSet dataSet, String tableName)</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelper.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache">
+            <summary>Shim type of Microsoft.ApplicationBlocks.Data.SqlHelperParameterCache</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.#ctor(Microsoft.ApplicationBlocks.Data.SqlHelperParameterCache)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.CacheParameterSetStringStringSqlParameterArray">
+            <summary>Sets the shim of SqlHelperParameterCache.CacheParameterSet(String connectionString, String commandText, SqlParameter[] commandParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.CloneParametersSqlParameterArray">
+            <summary>Sets the shim of SqlHelperParameterCache.CloneParameters(SqlParameter[] originalParameters)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.Constructor">
+            <summary>Sets the shim of SqlHelperParameterCache.SqlHelperParameterCache()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.DiscoverSpParameterSetSqlConnectionStringBoolean">
+            <summary>Sets the shim of SqlHelperParameterCache.DiscoverSpParameterSet(SqlConnection connection, String spName, Boolean includeReturnValueParameter)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.GetCachedParameterSetStringString">
+            <summary>Sets the shim of SqlHelperParameterCache.GetCachedParameterSet(String connectionString, String commandText)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.GetSpParameterSetInternalSqlConnectionStringBoolean">
+            <summary>Sets the shim of SqlHelperParameterCache.GetSpParameterSetInternal(SqlConnection connection, String spName, Boolean includeReturnValueParameter)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.GetSpParameterSetSqlConnectionString">
+            <summary>Sets the shim of SqlHelperParameterCache.GetSpParameterSet(SqlConnection connection, String spName)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.GetSpParameterSetSqlConnectionStringBoolean">
+            <summary>Sets the shim of SqlHelperParameterCache.GetSpParameterSet(SqlConnection connection, String spName, Boolean includeReturnValueParameter)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.GetSpParameterSetStringString">
+            <summary>Sets the shim of SqlHelperParameterCache.GetSpParameterSet(String connectionString, String spName)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.GetSpParameterSetStringStringBoolean">
+            <summary>Sets the shim of SqlHelperParameterCache.GetSpParameterSet(String connectionString, String spName, Boolean includeReturnValueParameter)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.StaticConstructor">
+            <summary>Sets the shim of SqlHelperParameterCache.SqlHelperParameterCache()</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationBlocks.Data.Fakes.ShimSqlHelperParameterCache.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+    </members>
+</doc>

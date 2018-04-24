@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SANXUATModelStoreContainer" CdmEntityContainer="SANXUATEntities">
+    <EntitySetMapping Name="tblNHAP_VATLIEUPHU">
+      <EntityTypeMapping TypeName="SANXUATModel.tblNHAP_VATLIEUPHU">
+        <MappingFragment StoreEntitySet="tblNHAP_VATLIEUPHU">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Manhap" ColumnName="Manhap" />
+          <ScalarProperty Name="Ngaynhap" ColumnName="Ngaynhap" />
+          <ScalarProperty Name="Mavlphu" ColumnName="Mavlphu" />
+          <ScalarProperty Name="Donvi" ColumnName="Donvi" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="Dongia" ColumnName="Dongia" />
+          <ScalarProperty Name="Thanhtien" ColumnName="Thanhtien" />
+          <ScalarProperty Name="Nguoilap" ColumnName="Nguoilap" />
+          <ScalarProperty Name="Nguoigiao" ColumnName="Nguoigiao" />
+          <ScalarProperty Name="Diengiai" ColumnName="Diengiai" />
+          <ScalarProperty Name="Nguoinhan" ColumnName="Nguoinhan" />
+          <ScalarProperty Name="Noinhan" ColumnName="Noinhan" />
+          <ScalarProperty Name="Ngayghi" ColumnName="Ngayghi" />
+          <ScalarProperty Name="Nhaptam" ColumnName="Nhaptam" />
+          <ScalarProperty Name="XuatTT" ColumnName="XuatTT" />
+          <ScalarProperty Name="LoaiNV" ColumnName="LoaiNV" />
+          <ScalarProperty Name="BpSuDung" ColumnName="BpSuDung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

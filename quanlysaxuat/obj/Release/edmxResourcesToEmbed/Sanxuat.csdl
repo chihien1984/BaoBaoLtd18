@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SANXUATModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblDM_VATTU">
+    <Key>
+      <PropertyRef Name="Ma_vl" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ma_vl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ma_loai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ten_loai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Kich_thuoc_vl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Ten_vat_lieu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Donvi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Donvi_quidoi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaNCC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nguoilap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ngaylap" Type="DateTime" Precision="3" />
+    <Property Name="Mahieu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soluong_ton" Type="Double" />
+    <Property Name="TongNhap" Type="Double" />
+    <Property Name="TongXuat" Type="Double" />
+    <Property Name="TonCuoi" Type="Double" />
+    <Property Name="MaxNgayNhap" Type="DateTime" Precision="0" />
+    <Property Name="MaxNgayXuat" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="tblvattu_dauvao">
+    <Key>
+      <PropertyRef Name="CodeVatllieu" />
+    </Key>
+    <Property Name="CodeVatllieu" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Purchase_order" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaDN_VATTU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Iden" Type="Int64" />
+    <Property Name="madh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Codedetail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Masp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tenquicachsp" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Soluongsanpham" Type="Int32" />
+    <Property Name="Ma_CT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ten_CT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="QC_CT" Type="Int32" />
+    <Property Name="Soluong_CT" Type="Int32" />
+    <Property Name="Donvi_sanpham" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ten_vattu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SL_vattucan" Type="Int32" />
+    <Property Name="KL_vattucan" Type="Double" />
+    <Property Name="SL_vattutonkho" Type="Int32" />
+    <Property Name="KL_vattutonkho" Type="Double" />
+    <Property Name="SL_vattumua" Type="Double" />
+    <Property Name="KL_vattumua" Type="Double" />
+    <Property Name="Donvi_vattu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NCC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NguoiGD" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Dongia" Type="Double" />
+    <Property Name="Donviquydoi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ngaydat_vattu" Type="DateTime" Precision="3" />
+    <Property Name="NgayDK_ve" Type="DateTime" Precision="3" />
+    <Property Name="Ngayve_TT" Type="DateTime" Precision="3" />
+    <Property Name="SL_vattuve" Type="Double" />
+    <Property Name="KL_vattuve" Type="Double" />
+    <Property Name="SL_tinhgia" Type="Double" />
+    <Property Name="Dvt_gia" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Ghichu_dathangmua" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+    <Property Name="Ghichu_denghimua" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+    <Property Name="DK_TCmua" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="quyetdinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nhanviendathang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nguoikiemkho" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngaykiemkho" Type="DateTime" Precision="3" />
+    <Property Name="nguoinhap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngaynhap" Type="DateTime" Precision="3" />
+    <Property Name="fax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NVKD" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CodePO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayDinhViDatVatTu" Type="DateTime" Precision="3" />
+    <Property Name="Ngoaiquan" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Ghichu_CT" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Ghichu_DH" Type="String" MaxLength="800" FixedLength="false" Unicode="true" />
+    <Property Name="Ngaylap_DM" Type="DateTime" Precision="0" />
+    <Property Name="Nguoilap_DM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Duyetsanxuat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nguoiduyet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ngayduyet" Type="DateTime" Precision="3" />
+    <Property Name="Kiemkho" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mavattu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaNCC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ngayxacnhan" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="SANXUATDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblDM_VATTU" EntityType="Self.tblDM_VATTU" />
+    <EntitySet Name="tblvattu_dauvao" EntityType="Self.tblvattu_dauvao" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,3 @@
+C:\Users\Nguyen\Desktop\Project_V2.16\quanlysaxuat\Fakes\Sqlhelper.fakes : warning : Cannot generate stub for Microsoft.ApplicationBlocks.Data.SqlHelper: type is sealed.
+C:\Users\Nguyen\Desktop\Project_V2.16\quanlysaxuat\Fakes\Sqlhelper.fakes : warning : Cannot generate stub for Microsoft.ApplicationBlocks.Data.SqlHelperParameterCache: type is sealed.
+C:\Users\Nguyen\Desktop\Project_V2.16\quanlysaxuat\Fakes\Sqlhelper.fakes : warning : Cannot generate shim for Microsoft.ApplicationBlocks.Data.SqlHelper+SqlConnectionOwnership: type is an enum.

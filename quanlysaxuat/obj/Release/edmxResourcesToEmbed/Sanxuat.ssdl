@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SANXUATModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblDM_VATTU">
+    <Key>
+      <PropertyRef Name="Ma_vl" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ma_vl" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Ma_loai" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ten_loai" Type="nvarchar" MaxLength="50" />
+    <Property Name="Kich_thuoc_vl" Type="nvarchar" MaxLength="250" />
+    <Property Name="Ten_vat_lieu" Type="nvarchar" MaxLength="500" />
+    <Property Name="Donvi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Donvi_quidoi" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaNCC" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nguoilap" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ngaylap" Type="datetime" />
+    <Property Name="Mahieu" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soluong_ton" Type="float" />
+    <Property Name="TongNhap" Type="float" />
+    <Property Name="TongXuat" Type="float" />
+    <Property Name="TonCuoi" Type="float" />
+    <Property Name="MaxNgayNhap" Type="date" />
+    <Property Name="MaxNgayXuat" Type="date" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SANXUAT.dbo.tblvattu_dauvao' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblvattu_dauvao">
+    <Key>
+      <PropertyRef Name="CodeVatllieu" />
+    </Key>
+    <Property Name="CodeVatllieu" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Purchase_order" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaDN_VATTU" Type="nvarchar" MaxLength="50" />
+    <Property Name="Iden" Type="bigint" />
+    <Property Name="madh" Type="nvarchar" MaxLength="50" />
+    <Property Name="Codedetail" Type="nvarchar" MaxLength="100" />
+    <Property Name="Masp" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tenquicachsp" Type="nvarchar" MaxLength="300" />
+    <Property Name="Soluongsanpham" Type="int" />
+    <Property Name="Ma_CT" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ten_CT" Type="nvarchar" MaxLength="250" />
+    <Property Name="QC_CT" Type="int" />
+    <Property Name="Soluong_CT" Type="int" />
+    <Property Name="Donvi_sanpham" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ten_vattu" Type="nvarchar" MaxLength="300" />
+    <Property Name="SL_vattucan" Type="int" />
+    <Property Name="KL_vattucan" Type="float" />
+    <Property Name="SL_vattutonkho" Type="int" />
+    <Property Name="KL_vattutonkho" Type="float" />
+    <Property Name="SL_vattumua" Type="float" />
+    <Property Name="KL_vattumua" Type="float" />
+    <Property Name="Donvi_vattu" Type="nvarchar" MaxLength="50" />
+    <Property Name="NCC" Type="nvarchar" MaxLength="200" />
+    <Property Name="NguoiGD" Type="nvarchar" MaxLength="100" />
+    <Property Name="Dongia" Type="float" />
+    <Property Name="Donviquydoi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ngaydat_vattu" Type="datetime" />
+    <Property Name="NgayDK_ve" Type="datetime" />
+    <Property Name="Ngayve_TT" Type="datetime" />
+    <Property Name="SL_vattuve" Type="float" />
+    <Property Name="KL_vattuve" Type="float" />
+    <Property Name="SL_tinhgia" Type="float" />
+    <Property Name="Dvt_gia" Type="nvarchar" MaxLength="10" />
+    <Property Name="Ghichu_dathangmua" Type="nvarchar" MaxLength="600" />
+    <Property Name="Ghichu_denghimua" Type="nvarchar" MaxLength="600" />
+    <Property Name="DK_TCmua" Type="nvarchar" MaxLength="600" />
+    <Property Name="VAT" Type="nvarchar" MaxLength="10" />
+    <Property Name="quyetdinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="nhanviendathang" Type="nvarchar" MaxLength="50" />
+    <Property Name="nguoikiemkho" Type="nvarchar" MaxLength="50" />
+    <Property Name="ngaykiemkho" Type="datetime" />
+    <Property Name="nguoinhap" Type="nvarchar" MaxLength="50" />
+    <Property Name="ngaynhap" Type="datetime" />
+    <Property Name="fax" Type="nvarchar" MaxLength="50" />
+    <Property Name="NVKD" Type="nvarchar" MaxLength="100" />
+    <Property Name="CodePO" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayDinhViDatVatTu" Type="datetime" />
+    <Property Name="Ngoaiquan" Type="nvarchar" MaxLength="500" />
+    <Property Name="Ghichu_CT" Type="nvarchar" MaxLength="500" />
+    <Property Name="Ghichu_DH" Type="nvarchar" MaxLength="800" />
+    <Property Name="Ngaylap_DM" Type="date" />
+    <Property Name="Nguoilap_DM" Type="nvarchar" MaxLength="50" />
+    <Property Name="Duyetsanxuat" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nguoiduyet" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ngayduyet" Type="datetime" />
+    <Property Name="Kiemkho" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mavattu" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaNCC" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ngayxacnhan" Type="date" />
+  </EntityType>
+  <EntityContainer Name="SANXUATModelStoreContainer">
+    <EntitySet Name="tblDM_VATTU" EntityType="Self.tblDM_VATTU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblvattu_dauvao" EntityType="Self.tblvattu_dauvao" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblvattu_dauvao].[CodeVatllieu] AS [CodeVatllieu], 
+    [tblvattu_dauvao].[Purchase_order] AS [Purchase_order], 
+    [tblvattu_dauvao].[MaDN_VATTU] AS [MaDN_VATTU], 
+    [tblvattu_dauvao].[Iden] AS [Iden], 
+    [tblvattu_dauvao].[madh] AS [madh], 
+    [tblvattu_dauvao].[Codedetail] AS [Codedetail], 
+    [tblvattu_dauvao].[Masp] AS [Masp], 
+    [tblvattu_dauvao].[Tenquicachsp] AS [Tenquicachsp], 
+    [tblvattu_dauvao].[Soluongsanpham] AS [Soluongsanpham], 
+    [tblvattu_dauvao].[Ma_CT] AS [Ma_CT], 
+    [tblvattu_dauvao].[Ten_CT] AS [Ten_CT], 
+    [tblvattu_dauvao].[QC_CT] AS [QC_CT], 
+    [tblvattu_dauvao].[Soluong_CT] AS [Soluong_CT], 
+    [tblvattu_dauvao].[Donvi_sanpham] AS [Donvi_sanpham], 
+    [tblvattu_dauvao].[Ten_vattu] AS [Ten_vattu], 
+    [tblvattu_dauvao].[SL_vattucan] AS [SL_vattucan], 
+    [tblvattu_dauvao].[KL_vattucan] AS [KL_vattucan], 
+    [tblvattu_dauvao].[SL_vattutonkho] AS [SL_vattutonkho], 
+    [tblvattu_dauvao].[KL_vattutonkho] AS [KL_vattutonkho], 
+    [tblvattu_dauvao].[SL_vattumua] AS [SL_vattumua], 
+    [tblvattu_dauvao].[KL_vattumua] AS [KL_vattumua], 
+    [tblvattu_dauvao].[Donvi_vattu] AS [Donvi_vattu], 
+    [tblvattu_dauvao].[NCC] AS [NCC], 
+    [tblvattu_dauvao].[NguoiGD] AS [NguoiGD], 
+    [tblvattu_dauvao].[Dongia] AS [Dongia], 
+    [tblvattu_dauvao].[Donviquydoi] AS [Donviquydoi], 
+    [tblvattu_dauvao].[Ngaydat_vattu] AS [Ngaydat_vattu], 
+    [tblvattu_dauvao].[NgayDK_ve] AS [NgayDK_ve], 
+    [tblvattu_dauvao].[Ngayve_TT] AS [Ngayve_TT], 
+    [tblvattu_dauvao].[SL_vattuve] AS [SL_vattuve], 
+    [tblvattu_dauvao].[KL_vattuve] AS [KL_vattuve], 
+    [tblvattu_dauvao].[SL_tinhgia] AS [SL_tinhgia], 
+    [tblvattu_dauvao].[Dvt_gia] AS [Dvt_gia], 
+    [tblvattu_dauvao].[Ghichu_dathangmua] AS [Ghichu_dathangmua], 
+    [tblvattu_dauvao].[Ghichu_denghimua] AS [Ghichu_denghimua], 
+    [tblvattu_dauvao].[DK_TCmua] AS [DK_TCmua], 
+    [tblvattu_dauvao].[VAT] AS [VAT], 
+    [tblvattu_dauvao].[quyetdinh] AS [quyetdinh], 
+    [tblvattu_dauvao].[nhanviendathang] AS [nhanviendathang], 
+    [tblvattu_dauvao].[nguoikiemkho] AS [nguoikiemkho], 
+    [tblvattu_dauvao].[ngaykiemkho] AS [ngaykiemkho], 
+    [tblvattu_dauvao].[nguoinhap] AS [nguoinhap], 
+    [tblvattu_dauvao].[ngaynhap] AS [ngaynhap], 
+    [tblvattu_dauvao].[fax] AS [fax], 
+    [tblvattu_dauvao].[NVKD] AS [NVKD], 
+    [tblvattu_dauvao].[CodePO] AS [CodePO], 
+    [tblvattu_dauvao].[NgayDinhViDatVatTu] AS [NgayDinhViDatVatTu], 
+    [tblvattu_dauvao].[Ngoaiquan] AS [Ngoaiquan], 
+    [tblvattu_dauvao].[Ghichu_CT] AS [Ghichu_CT], 
+    [tblvattu_dauvao].[Ghichu_DH] AS [Ghichu_DH], 
+    [tblvattu_dauvao].[Ngaylap_DM] AS [Ngaylap_DM], 
+    [tblvattu_dauvao].[Nguoilap_DM] AS [Nguoilap_DM], 
+    [tblvattu_dauvao].[Duyetsanxuat] AS [Duyetsanxuat], 
+    [tblvattu_dauvao].[Nguoiduyet] AS [Nguoiduyet], 
+    [tblvattu_dauvao].[Ngayduyet] AS [Ngayduyet], 
+    [tblvattu_dauvao].[Kiemkho] AS [Kiemkho], 
+    [tblvattu_dauvao].[Mavattu] AS [Mavattu], 
+    [tblvattu_dauvao].[MaNCC] AS [MaNCC], 
+    [tblvattu_dauvao].[Ngayxacnhan] AS [Ngayxacnhan]
+    FROM [dbo].[tblvattu_dauvao] AS [tblvattu_dauvao]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

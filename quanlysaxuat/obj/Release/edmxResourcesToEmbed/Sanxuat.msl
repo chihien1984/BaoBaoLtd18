@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SANXUATModelStoreContainer" CdmEntityContainer="SANXUATDbContext">
+    <EntitySetMapping Name="tblDM_VATTU">
+      <EntityTypeMapping TypeName="SANXUATModel.tblDM_VATTU">
+        <MappingFragment StoreEntitySet="tblDM_VATTU">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Ma_vl" ColumnName="Ma_vl" />
+          <ScalarProperty Name="Ma_loai" ColumnName="Ma_loai" />
+          <ScalarProperty Name="Ten_loai" ColumnName="Ten_loai" />
+          <ScalarProperty Name="Kich_thuoc_vl" ColumnName="Kich_thuoc_vl" />
+          <ScalarProperty Name="Ten_vat_lieu" ColumnName="Ten_vat_lieu" />
+          <ScalarProperty Name="Donvi" ColumnName="Donvi" />
+          <ScalarProperty Name="Donvi_quidoi" ColumnName="Donvi_quidoi" />
+          <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
+          <ScalarProperty Name="Nguoilap" ColumnName="Nguoilap" />
+          <ScalarProperty Name="Ngaylap" ColumnName="Ngaylap" />
+          <ScalarProperty Name="Mahieu" ColumnName="Mahieu" />
+          <ScalarProperty Name="Soluong_ton" ColumnName="Soluong_ton" />
+          <ScalarProperty Name="TongNhap" ColumnName="TongNhap" />
+          <ScalarProperty Name="TongXuat" ColumnName="TongXuat" />
+          <ScalarProperty Name="TonCuoi" ColumnName="TonCuoi" />
+          <ScalarProperty Name="MaxNgayNhap" ColumnName="MaxNgayNhap" />
+          <ScalarProperty Name="MaxNgayXuat" ColumnName="MaxNgayXuat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblvattu_dauvao">
+      <EntityTypeMapping TypeName="SANXUATModel.tblvattu_dauvao">
+        <MappingFragment StoreEntitySet="tblvattu_dauvao">
+          <ScalarProperty Name="CodeVatllieu" ColumnName="CodeVatllieu" />
+          <ScalarProperty Name="Purchase_order" ColumnName="Purchase_order" />
+          <ScalarProperty Name="MaDN_VATTU" ColumnName="MaDN_VATTU" />
+          <ScalarProperty Name="Iden" ColumnName="Iden" />
+          <ScalarProperty Name="madh" ColumnName="madh" />
+          <ScalarProperty Name="Codedetail" ColumnName="Codedetail" />
+          <ScalarProperty Name="Masp" ColumnName="Masp" />
+          <ScalarProperty Name="Tenquicachsp" ColumnName="Tenquicachsp" />
+          <ScalarProperty Name="Soluongsanpham" ColumnName="Soluongsanpham" />
+          <ScalarProperty Name="Ma_CT" ColumnName="Ma_CT" />
+          <ScalarProperty Name="Ten_CT" ColumnName="Ten_CT" />
+          <ScalarProperty Name="QC_CT" ColumnName="QC_CT" />
+          <ScalarProperty Name="Soluong_CT" ColumnName="Soluong_CT" />
+          <ScalarProperty Name="Donvi_sanpham" ColumnName="Donvi_sanpham" />
+          <ScalarProperty Name="Ten_vattu" ColumnName="Ten_vattu" />
+          <ScalarProperty Name="SL_vattucan" ColumnName="SL_vattucan" />
+          <ScalarProperty Name="KL_vattucan" ColumnName="KL_vattucan" />
+          <ScalarProperty Name="SL_vattutonkho" ColumnName="SL_vattutonkho" />
+          <ScalarProperty Name="KL_vattutonkho" ColumnName="KL_vattutonkho" />
+          <ScalarProperty Name="SL_vattumua" ColumnName="SL_vattumua" />
+          <ScalarProperty Name="KL_vattumua" ColumnName="KL_vattumua" />
+          <ScalarProperty Name="Donvi_vattu" ColumnName="Donvi_vattu" />
+          <ScalarProperty Name="NCC" ColumnName="NCC" />
+          <ScalarProperty Name="NguoiGD" ColumnName="NguoiGD" />
+          <ScalarProperty Name="Dongia" ColumnName="Dongia" />
+          <ScalarProperty Name="Donviquydoi" ColumnName="Donviquydoi" />
+          <ScalarProperty Name="Ngaydat_vattu" ColumnName="Ngaydat_vattu" />
+          <ScalarProperty Name="NgayDK_ve" ColumnName="NgayDK_ve" />
+          <ScalarProperty Name="Ngayve_TT" ColumnName="Ngayve_TT" />
+          <ScalarProperty Name="SL_vattuve" ColumnName="SL_vattuve" />
+          <ScalarProperty Name="KL_vattuve" ColumnName="KL_vattuve" />
+          <ScalarProperty Name="SL_tinhgia" ColumnName="SL_tinhgia" />
+          <ScalarProperty Name="Dvt_gia" ColumnName="Dvt_gia" />
+          <ScalarProperty Name="Ghichu_dathangmua" ColumnName="Ghichu_dathangmua" />
+          <ScalarProperty Name="Ghichu_denghimua" ColumnName="Ghichu_denghimua" />
+          <ScalarProperty Name="DK_TCmua" ColumnName="DK_TCmua" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="quyetdinh" ColumnName="quyetdinh" />
+          <ScalarProperty Name="nhanviendathang" ColumnName="nhanviendathang" />
+          <ScalarProperty Name="nguoikiemkho" ColumnName="nguoikiemkho" />
+          <ScalarProperty Name="ngaykiemkho" ColumnName="ngaykiemkho" />
+          <ScalarProperty Name="nguoinhap" ColumnName="nguoinhap" />
+          <ScalarProperty Name="ngaynhap" ColumnName="ngaynhap" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="NVKD" ColumnName="NVKD" />
+          <ScalarProperty Name="CodePO" ColumnName="CodePO" />
+          <ScalarProperty Name="NgayDinhViDatVatTu" ColumnName="NgayDinhViDatVatTu" />
+          <ScalarProperty Name="Ngoaiquan" ColumnName="Ngoaiquan" />
+          <ScalarProperty Name="Ghichu_CT" ColumnName="Ghichu_CT" />
+          <ScalarProperty Name="Ghichu_DH" ColumnName="Ghichu_DH" />
+          <ScalarProperty Name="Ngaylap_DM" ColumnName="Ngaylap_DM" />
+          <ScalarProperty Name="Nguoilap_DM" ColumnName="Nguoilap_DM" />
+          <ScalarProperty Name="Duyetsanxuat" ColumnName="Duyetsanxuat" />
+          <ScalarProperty Name="Nguoiduyet" ColumnName="Nguoiduyet" />
+          <ScalarProperty Name="Ngayduyet" ColumnName="Ngayduyet" />
+          <ScalarProperty Name="Kiemkho" ColumnName="Kiemkho" />
+          <ScalarProperty Name="Mavattu" ColumnName="Mavattu" />
+          <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
+          <ScalarProperty Name="Ngayxacnhan" ColumnName="Ngayxacnhan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
